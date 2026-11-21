@@ -1,0 +1,11 @@
+.cms-sample {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: .7rem 1.25rem;
+  gap: .5rem;
+}
+
+.cms-sample a {
+  text-decoration: underline;
+}

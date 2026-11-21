@@ -1,0 +1,14 @@
+[data-block="imageText"] .co-split {
+  border-block: 1px solid var(--co-line);
+  padding-block: clamp(.9rem, 2.5cqi, 2.2rem);
+}
+
+[data-block="imageText"] .co-photo {
+  border-radius: .65rem;
+  box-shadow: var(--co-shadow);
+}
+
+[data-block="imageText"] h2 { max-width: 19ch; }
+[data-block="imageText"] p { max-width: 56ch; }
+[data-block="imageText"] [style*="center"] :is(h2,p) { margin-inline: auto; }
+[data-block="imageText"] .co-button { margin-top: .85rem; }

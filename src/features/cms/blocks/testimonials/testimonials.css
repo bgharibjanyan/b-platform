@@ -1,0 +1,9 @@
+[data-block="testimonials"] blockquote {
+  padding-inline-start: .8rem;
+  border-inline-start: 2px solid var(--co-accent);
+  font-family: var(--co-title);
+  font-size: clamp(1.02rem, 2cqi, 1.2rem);
+  line-height: 1.58;
+}
+[data-block="testimonials"] figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem .55rem; margin-block-start: .45rem; }
+[data-block="testimonials"] figcaption strong { color: var(--co-ink); }

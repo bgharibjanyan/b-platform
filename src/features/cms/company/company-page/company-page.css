@@ -1,0 +1,53 @@
+/* Preserve the viewport as the sticky header's scroll container. */
+html:has(.company-surface),
+body:has(.company-surface) { overflow-x: clip; }
+
+.company-surface {
+  container-type: inline-size;
+  --co-bg: #f6f3eb;
+  --co-accent: #234939;
+  --co-ink: #182a24;
+  --co-muted: #435951;
+  --co-line: color-mix(in srgb, var(--co-ink) 15%, var(--co-bg));
+  --co-surface: color-mix(in srgb, var(--co-bg) 22%, #fff);
+  --co-tint: color-mix(in srgb, var(--co-accent) 9%, var(--co-surface));
+  --co-accent-ink: color-mix(in srgb, var(--co-accent) 32%, var(--co-ink));
+  --co-shadow: 0 10px 30px color-mix(in srgb, var(--co-ink) 7%, transparent);
+  --co-radius: 1.25rem;
+  --co-media-radius: 1rem;
+  --co-gutter: clamp(.9rem, 4cqi, 2rem);
+  --co-content-width: 1240px;
+  --co-header-inset: .75rem;
+  --co-title: Georgia, "Noto Serif Armenian", serif;
+  --co-button-text: #fff;
+  color-scheme: light;
+  background: radial-gradient(ellipse at 94% 0, var(--co-tint), transparent 31rem), var(--co-bg);
+  color: var(--co-ink);
+  font: 400 1rem/1.68 "Noto Sans Armenian", Arial, sans-serif;
+  overflow: clip;
+}
+
+.co-theme-slate {
+  --co-title: Arial, "Noto Sans Armenian", sans-serif;
+  --co-ink: #172839;
+  --co-muted: #40586a;
+}
+
+.company-surface :where(h1,h2,h3) {
+  font-family: var(--co-title);
+  font-weight: 550;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.company-surface h1 { font-size: clamp(2.05rem, 5.5cqi, 4.7rem); letter-spacing: -.035em; }
+.company-surface h2 { font-size: clamp(1.65rem, 3.7cqi, 2.95rem); letter-spacing: -.025em; margin-bottom: 1rem; }
+.company-surface h3 { font-size: clamp(1.15rem, 2.1cqi, 1.4rem); line-height: 1.3; }
+.company-surface :is(p,address) { margin-top: .65rem; overflow-wrap: anywhere; }
+.company-surface :is(p,small,figcaption) { color: var(--co-muted); }
+.company-surface address { font-style: normal; }
+.company-surface li { margin: .3rem 0; }
+.company-surface :where(ul,ol) { padding-inline-start: 1.3rem; }
+.company-surface a:not(.co-button):hover { text-decoration: underline; text-underline-offset: .18em; }
+.company-surface [hidden] { display: none; }

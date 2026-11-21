@@ -1,0 +1,5 @@
+.co-banner { border-inline-start: 4px solid var(--co-accent); }
+.co-banner p { color: inherit; }
+.co-banner a { font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+.co-banner-offer { color: #49340e; background: #faf0d6; border-color: #edcf8c; }
+.co-banner-urgent { color: #662b21; background: #fbeae5; border-color: #ecb5a7; }

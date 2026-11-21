@@ -1,0 +1,24 @@
+.cms-block-editor {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--admin-line);
+}
+
+.cms-options {
+  border: 1px solid var(--admin-line);
+  border-radius: 10px;
+  padding: .55rem .65rem;
+}
+
+.cms-options summary { font-weight: 650; cursor: pointer; overflow-wrap: anywhere; }
+
+.cms-remove-section {
+  display: grid;
+  gap: .55rem;
+  padding: .65rem;
+  border: 1px solid #efc1b6;
+  border-radius: 10px;
+  background: #fff2ec;
+}

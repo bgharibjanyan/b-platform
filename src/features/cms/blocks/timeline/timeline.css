@@ -1,0 +1,24 @@
+.company-surface .co-timeline { list-style: none; padding-inline-start: .5rem; }
+.company-surface .co-timeline li {
+  position: relative;
+  display: grid;
+  gap: .35rem;
+  border-inline-start: 1px solid var(--co-line);
+  padding: 0 0 1.5rem 1.25rem;
+  margin: 0;
+}
+.co-timeline li::before {
+  content: "";
+  position: absolute;
+  top: .62rem;
+  inset-inline-start: -.26rem;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background: var(--co-accent-ink);
+}
+.company-surface .co-timeline li:last-child { padding-bottom: 0; }
+.co-timeline li > span { color: var(--co-accent-ink); font-weight: 730; font-size: .88rem; }
+.co-reveal { animation: co-reveal .5s ease-out; }
+@keyframes co-reveal { from { opacity: .7; transform: translateY(8px); } }
+@media (prefers-reduced-motion: reduce) { .co-reveal { animation: none; } }

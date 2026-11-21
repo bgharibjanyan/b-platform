@@ -1,0 +1,15 @@
+.co-hours {
+  width: 100%;
+  max-width: 42rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--co-line);
+  border-radius: var(--co-radius);
+  background: var(--co-surface);
+  text-align: start;
+}
+.co-hours :is(th,td) { padding: .7rem clamp(.65rem, 2.4cqi, 1rem); overflow-wrap: anywhere; }
+.co-hours th { text-align: start; }
+.co-hours tr + tr > * { border-top: 1px solid var(--co-line); }
+.co-hours + small { display: block; padding-block-start: .55rem; }
+.co-hours-exception { max-width: 42rem; padding: .75rem 1rem; border: 1px solid var(--co-line); border-radius: .85rem; background: var(--co-tint); }

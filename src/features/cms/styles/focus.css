@@ -1,0 +1,6 @@
+.company-surface :focus-visible,
+.cms-shell :focus-visible,
+.cms-entry :focus-visible {
+  outline: 3px solid #94610e;
+  outline-offset: 3px;
+}

@@ -1,0 +1,6 @@
+.co-prose { max-width: 65ch; }
+.co-prose[style*="center"] { margin-inline: auto; }
+[data-block="richText"] p { max-width: 72ch; }
+[data-block="richText"] [style*="center"] p { margin-inline: auto; }
+[data-block="richText"] li { margin-block: .35rem; }
+[data-block="richText"] a { color: var(--co-accent-ink); text-decoration: underline; text-underline-offset: .2em; }

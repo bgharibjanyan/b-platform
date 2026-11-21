@@ -1,0 +1,80 @@
+.cms-fields {
+  display: grid;
+  gap: .8rem;
+  margin-block: .7rem;
+}
+
+.cms-fields :where(input,textarea,select) {
+  width: 100%;
+  min-width: 0;
+}
+
+.cms-fields input[type=color] {
+  height: 45px;
+  padding: .25rem;
+}
+
+.cms-fields .cms-check {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.cms-check input {
+  width: auto;
+}
+
+.cms-fields small {
+  font-weight: 400;
+}
+
+.cms-repeat {
+  border: 1px solid var(--admin-line);
+  border-radius: 6px;
+  padding: .65rem;
+  min-width: 0;
+}
+
+.cms-repeat legend {
+  padding-inline: .25rem;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.cms-repeat details {
+  margin-bottom: .6rem;
+  padding: .5rem;
+  border: 1px solid var(--admin-line);
+  border-radius: 5px;
+}
+
+.cms-repeat summary {
+  font-weight: 650;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+
+.cms-fields textarea { resize: vertical; }
+.cms-fields :is(input,select,textarea)[aria-invalid=true] { border-color: #b9604e; background: #fffaf8; }
+.cms-fields input[type=checkbox] { accent-color: var(--admin-accent); }
+.cms-repeat details[open] { background: #f8fbf8; }
+
+.cms-layout-group {
+  min-width: 0;
+  padding: .65rem .85rem .25rem;
+  border: 1px solid var(--admin-line);
+  border-radius: 11px;
+  margin-top: 1rem;
+}
+.cms-layout-group > legend {
+  padding-inline: .35rem;
+  font-size: .95rem;
+  font-weight: 730;
+}
+.cms-layout-group > p { font-size: .8rem; }
+.cms-colors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .65rem;
+}

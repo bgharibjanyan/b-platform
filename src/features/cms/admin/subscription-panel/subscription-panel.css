@@ -1,0 +1,44 @@
+.cms-plans {
+  padding: 1rem;
+}
+
+.cms-plan-grid li {
+  margin-left: 1.2rem;
+}
+
+.cms-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: .85rem;
+  margin-top: 1rem;
+}
+
+.cms-plan-grid article {
+  display: grid;
+  gap: .7rem;
+  align-content: start;
+  padding: 1.25rem;
+  border: 1px solid var(--admin-line);
+  background: white;
+  border-radius: 8px;
+}
+
+.cms-plan-grid .cms-plan-active {
+  border: 2px solid var(--admin-accent);
+}
+
+.cms-plan-grid strong {
+  font-size: 2rem;
+}
+
+.cms-plan-grid span {
+  color: var(--admin-accent);
+  font-size: .86rem;
+  font-weight: 700;
+}
+
+@media (max-width:780px) {
+  .cms-plan-grid {
+    grid-template-columns: 1fr;
+  }
+}

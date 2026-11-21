@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  trailingSlash: true,
+  serverExternalPackages: ["mysql2"],
   experimental: {
     agentFeedback: true,
+    serverActions: { bodySizeLimit: "8mb" },
   },
   cacheComponents: true,
   partialPrefetching: true,

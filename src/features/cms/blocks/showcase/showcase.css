@@ -1,0 +1,2 @@
+[data-block="showcase"] .co-card small:empty { display: none; }
+[data-block="showcase"] .co-card small { color: var(--co-accent-ink); font-weight: 650; }

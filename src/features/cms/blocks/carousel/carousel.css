@@ -1,0 +1,10 @@
+.co-carousel {
+  padding: clamp(.6rem, 1.6cqi, .95rem);
+  background: var(--co-surface);
+  border: 1px solid var(--co-line);
+  border-radius: var(--co-radius);
+  box-shadow: var(--co-shadow);
+}
+.co-carousel .co-controls { margin-top: .75rem; padding: .65rem .2rem .1rem; border-top: 1px solid var(--co-line); }
+.co-carousel > :is(p,a) { margin-inline: .3rem; }
+.co-carousel > a { text-decoration: underline; }

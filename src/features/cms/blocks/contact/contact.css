@@ -1,0 +1,20 @@
+.co-contact {
+  padding: clamp(1.3rem, 4.5cqi, 3rem);
+  border-block: 1px solid var(--co-line);
+  background: var(--co-surface);
+}
+
+.co-contact .co-link-list {
+  align-content: start;
+  align-items: start;
+  justify-content: flex-start;
+  margin-block-start: .9rem;
+}
+
+.co-contact .co-button:not(:first-child) {
+  color: var(--co-accent-ink);
+  background: transparent;
+  border-color: var(--co-line);
+}
+
+.co-contact address + address { margin-block-start: .7rem; }

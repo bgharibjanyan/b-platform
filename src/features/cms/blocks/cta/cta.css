@@ -1,0 +1,43 @@
+.co-cta {
+  padding: clamp(1.35rem, 5cqi, 3.25rem);
+  border-radius: .8rem;
+}
+
+.co-cta > div:first-child { max-width: 57ch; }
+.co-cta h2 { margin-bottom: .65rem; }
+
+.co-cta-accent {
+  background: linear-gradient(120deg, color-mix(in srgb, var(--co-accent) 20%, #101e18), #203c2f);
+  border-color: transparent;
+  color: #fff8ec;
+}
+
+.co-cta-accent p { color: #eee7d9; }
+
+.co-cta-center {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.co-cta-center .co-controls { justify-content: center; }
+.co-cta-neutral { background: transparent; }
+
+.co-cta-accent .co-button {
+  color: #17291e;
+  border-color: #f5e2c3;
+  background: #f5e2c3;
+}
+
+.co-cta .co-button + .co-button {
+  border-color: var(--co-line);
+  color: var(--co-accent-ink);
+  background: var(--co-surface);
+}
+
+.co-cta-accent .co-button + .co-button {
+  color: #fff8ec;
+  border-color: #fcf1de80;
+  background: transparent;
+}

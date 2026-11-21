@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "db:init": "node scripts/init-database.cjs",
+    "predev": "npm run db:init",
+    "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:import-sqlite": "node scripts/init-database.cjs --from-sqlite"
   },
   "dependencies": {
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "mysql2": "3.24.6"
   },
   "devDependencies": {
     "@types/node": "^20",

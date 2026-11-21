@@ -1,0 +1,25 @@
+.cms-preview {
+  position: sticky;
+  top: 5.4rem;
+  overflow: hidden;
+}
+
+.cms-preview-bar {
+  padding: .65rem .9rem;
+  border-bottom: 1px solid var(--admin-line);
+}
+
+.cms-preview-body {
+  height: min(68dvh, 830px);
+  overflow: auto;
+  background: #e7ebe8;
+}
+
+.cms-preview-mobile .company-surface {
+  max-width: 390px;
+  margin: auto;
+}
+
+@container admin-content (max-width: 790px) {
+  .cms-preview { position: static; }
+}

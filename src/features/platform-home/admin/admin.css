@@ -1,0 +1,36 @@
+.hp-admin-switcher { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+.hp-admin-switcher button, .hp-featured-actions button, .hp-admin-add button { font: inherit; font-weight: 650; cursor: pointer; padding: 9px 13px; border: 1px solid #cfc7d9; background: #fff; color: #271b40; border-radius: 8px; }
+.hp-admin-switcher button[aria-pressed="true"] { background: #ede4f8; border-color: #ad93ce; }
+.hp-admin-switcher button:hover, .hp-featured-actions button:hover, .hp-admin-add button:hover { background: #f3ecfb; }
+.hp-admin-form { display: grid; gap: 11px; }
+.hp-admin-form[hidden] { display: none; }
+.hp-admin-form-title, .hp-admin-section, .hp-admin-settings, .hp-admin-save { border: 1px solid #d9d2e0; background: #fff; color: #271b40; border-radius: 12px; }
+.hp-admin-form-title, .hp-admin-save { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px 18px; }
+.hp-admin-form-title h2 { font-size: 1.2rem; margin: 0; }
+.hp-admin-form-title p, .hp-admin-settings p { margin: 4px 0 0; color: #635871; font-size: .92rem; }
+.hp-admin-form-title a { display: inline-flex; align-items: center; gap: 5px; font-weight: 700; font-size: .91rem; text-decoration: underline; text-underline-offset: 3px; }
+.hp-admin-form-title svg, .hp-admin-section svg, .hp-featured-actions svg { width: 16px; height: 16px; }
+.hp-admin-section summary { cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; font-weight: 720; }
+.hp-admin-section summary::-webkit-details-marker { display: none; }
+.hp-admin-section[open] summary svg { rotate: 180deg; }
+.hp-admin-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; padding: 0 18px 18px; }
+.hp-admin-fields label, .hp-admin-settings label { min-width: 0; display: grid; gap: 5px; font-size: .87rem; font-weight: 650; }
+.hp-admin-fields label[data-wide="true"] { grid-column: 1/-1; }
+.hp-admin-fields :is(input,textarea), .hp-admin-settings :is(input,select) { width: 100%; min-height: 40px; padding: 8px 10px; border: 1px solid #ccc3d6; border-radius: 7px; background: #fff; color: #211931; font: inherit; font-weight: 450; }
+.hp-admin-fields textarea { resize: vertical; }
+.hp-admin-save { position: sticky; z-index: 3; bottom: 9px; box-shadow: 0 4px 16px #25143718; justify-content: end; }
+.hp-admin-save .cms-message { margin: 0 auto 0 0; }
+.hp-admin-save button { flex-shrink: 0; }
+.hp-admin-settings { padding: 15px 18px; }
+.hp-admin-settings input { max-width: 480px; }
+.hp-admin-add { display: flex; flex-wrap: wrap; align-items: end; gap: 8px; margin-top: 12px; }
+.hp-featured-list { padding-left: 20px; margin: 12px 0 0; }
+.hp-featured-list li { padding: 6px 0; border-bottom: 1px solid #e6e0ea; }
+.hp-featured-list li strong { overflow-wrap: anywhere; }
+.hp-featured-actions { display: inline-flex; vertical-align: middle; gap: 4px; margin-left: 8px; }
+.hp-featured-actions button { display: grid; place-items: center; padding: 6px; }
+.hp-admin-add button:disabled, .hp-featured-actions button:disabled { opacity: .54; cursor: default; }
+@media (max-width: 580px) {
+  .hp-admin-fields { grid-template-columns: 1fr; }
+  .hp-admin-form-title, .hp-admin-save { align-items: start; flex-direction: column; }
+}

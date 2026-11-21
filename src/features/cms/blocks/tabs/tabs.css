@@ -1,0 +1,13 @@
+.co-tabs {
+  margin-block: .65rem .8rem;
+  padding: .3rem;
+  overflow: auto;
+  flex-wrap: nowrap;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--co-line);
+  border-radius: .95rem;
+  background: var(--co-tint);
+}
+.co-tabs button { flex: 0 0 auto; }
+.co-tabs-stack { flex-wrap: wrap; }

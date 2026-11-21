@@ -1,0 +1,11 @@
+.co-faq {
+  border: 1px solid var(--co-line);
+  border-radius: 1rem;
+  padding: .2rem .9rem;
+  background: var(--co-surface);
+}
+.co-faq + .co-faq { margin-top: .55rem; }
+.co-faq[open] { padding-bottom: .9rem; box-shadow: var(--co-shadow); }
+.co-faq summary { min-height: 44px; padding-block: .55rem; cursor: pointer; font-weight: 680; overflow-wrap: anywhere; }
+.co-faq summary::marker { color: var(--co-accent-ink); }
+.co-faq p { margin-block-start: .35rem; }

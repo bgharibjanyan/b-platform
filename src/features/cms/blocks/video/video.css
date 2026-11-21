@@ -1,0 +1,15 @@
+.co-video {
+  min-height: 10rem;
+  overflow: hidden;
+  background: #1a3026;
+  color: white;
+  position: relative;
+  border-radius: var(--co-media-radius);
+  box-shadow: var(--co-shadow);
+}
+.co-video :is(iframe,button) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; color: inherit; }
+.co-video button { cursor: pointer; display: grid; place-items: center; background: transparent; }
+.co-video button:focus-visible { outline-offset: -5px; }
+.co-video button span { z-index: 1; background: #18352ae8; border: 1px solid #ffffff75; padding: .65rem 1rem; border-radius: 999px; font-weight: 650; }
+.co-video .co-photo { position: absolute; inset: 0; height: 100%; opacity: .74; }
+.co-video + a { display: inline-block; margin-top: .7rem; text-decoration: underline; }

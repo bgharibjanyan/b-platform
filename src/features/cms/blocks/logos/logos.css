@@ -1,0 +1,12 @@
+.co-logo-list { display: flex; overflow: auto; align-items: center; gap: .65rem; padding: .3rem .3rem .75rem; }
+.co-logo-relaxed { gap: clamp(.85rem, 3cqi, 1.75rem); }
+.co-logo-list > * { flex: 0 0 auto; }
+.co-logo-list .co-photo {
+  width: clamp(104px, 16cqi, 145px);
+  height: 76px;
+  padding: .7rem;
+  background: #fff;
+  border: 1px solid var(--co-line);
+  border-radius: .9rem;
+  object-fit: contain;
+}
